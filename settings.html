@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube | Налаштування</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/youtube_logo.png" type="image/png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+    <script src="./js/settings.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header__body">
+            <a href="index.html" class="logo"><span><img width="30" src="images/youtube_logo.png" alt="YouTube"></span><span>YouTube</span></a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="./select-item.html" class="menu__link" title="YouTube Аналітика"><button id="analytics"></button></a>
+                </li>
+                <li class="menu__item">
+                  <a href="./settings.html" class="menu__link"title="YouTube Налаштування"><button id="settings"></button></a>
+                </li>
+              </ul>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="settings section-page">
+          <div class="container">
+            <div class="yt-analytics__title">
+              <h2><b>YouTube</b> Налаштування</h2>
+            </div>
+            <div class="settings__body">
+
+              <div class="settings__block">
+                <input class="checkbox" type="checkbox" name="time" id="time">
+                <label class="pointer" for="time">
+                  <div class="elCheck">
+                    <div id="checkTime" class="checked">
+                      <div class="one"></div>
+                      <div class="two"></div>
+                    </div>
+                  </div>Відображати час виконання задачі
+                </label>
+              </div>
+
+              <div class="settings__block">
+                <input class="checkbox" type="checkbox" name="cacheUse" id="cacheUse">
+                <label class="pointer" for="cacheUse">
+                  <div class="elCheck">
+                    <div id="checkCache" class="checked">
+                      <div class="one"></div>
+                      <div class="two"></div>
+                    </div>
+                  </div>Використовувати кеш
+                </label>
+              </div>
+
+              <div class="settings__block">
+                <label for="cachePath">Змінити шлях до кешу</label>
+                <div class="inp_cont">
+                  <input class="inputCache" type="text" name="cachePath" id="cachePath">
+                  <button class="btn">Змінити</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>
+            Web Developers <a href="https://github.com/DenysDevelopment">Maksymuck Denys</a>, <a href="https://github.com/7Taras7">Hlivchuk Taras</a> and <a href="https://github.com/JuliaDom-7920">Silchuk Yuliiya</a> 
+          </p>
+          <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

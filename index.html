@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube | Головна</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/youtube_logo.png" type="image/png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+    <script src="https://apis.google.com/js/api.js" defer></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+
+  <body class="lock">
+    <div id="preloader">
+      <img src="./images/welcome.gif" alt="preloader" />
+    </div>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header__body">
+            <a href="index.html" class="logo"><span><img width="30" src="images/youtube_logo.png" alt="YouTube"></span><span>YouTube</span></a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="./select-item.html" class="menu__link" title="YouTube Аналітика"><button id="analytics"></button></a>
+                </li>
+                <li class="menu__item">
+                  <a href="./settings.html" class="menu__link"title="YouTube Налаштування"><button id="settings"></button></a>
+                </li>
+              </ul>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hello section-page">
+          <div class="container">
+            <div class="hello__body">
+              <div class="hello__content">
+                <h1 class="hello__title title">
+                  Привіт, ти зайшов на сайт по керуванню YouTube 👋
+                </h1>
+                <p class="hello__description">
+                  Ти зможеш аналізувати та <br />
+                  порівнювати улюблені Youtube канали
+                </p>
+                <div class="hello__buttons">
+                  <a href="./select-item.html" class="hello__btn btn"
+                    >YouTube Аналітика</a
+                  >
+                  <a href="./settings.html" class="hello__btn btn">Налаштування</a>
+                </div>
+              </div>
+              <div class="hello__img">
+                <img src="./images/welcome-white.png" alt="welcome" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>
+            Web Developers <a href="https://github.com/DenysDevelopment">Maksymuck Denys</a>, <a href="https://github.com/7Taras7">Hlivchuk Taras</a> and <a href="https://github.com/JuliaDom-7920">Silchuk Yuliiya</a> 
+          </p>
+          <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

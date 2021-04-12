@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Analytics | Порівняти інформацію про канали</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/youtube_logo.png" type="image/png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+	  <script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+	  <script src="https://apis.google.com/js/api.js"></script>
+    <script src="../js/comparison-channels.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="../index.html" class="logo"><span><img width="30" src="../images/youtube_logo.png" alt="YouTube"></span><span>YouTube</span></a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="../select-item.html" class="menu__link" title="YouTube Аналітика"><button id="analytics"></button></a>
+              </li>
+              <li class="menu__item">
+                <a href="../settings.html" class="menu__link"title="YouTube Налаштування"><button id="settings"></button></a>
+              </li>
+            </ul>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main>
+        <section class="search section-page">
+          <div class="container">
+            <div class="yt-analytics__title">
+              <h2 class="yt-analytics__text">Порівняти інформацію про канали</h2>
+            </div>
+            <div class="search__body">
+               <input id="idChanel" class='search__input' type="search" placeholder="Введіть ID каналу">
+               <button id="compare" class="search__btn btn">Отримати інформацію</button>
+            </div>
+          </div>
+        </section>
+        <section class="result section-page">
+          <div class="container">
+            <div class="result__out">
+              <div class="table">
+                <table id="table">
+                  <thead>
+                    <tr class="col">
+                      <th class="result__name-column">Ім'я каналу</th>
+                      <th class="result__name-column">Дата створення</th>
+                      <th class="result__name-column">К-сть підписників</th>
+                      <th class="result__name-column">К-сть відео</th>
+                      <th class="result__name-column">К-сть переглядів всіх відео</th>
+                    </tr>
+                  </thead>
+      
+                  <tbody id="tbody"></tbody>
+                  <script type="text/template" id="order-template">
+                  <tr class="col" data-id="{{id}}">
+                    <td class="result__text-column title"><p>{{title}}</p></td>
+                    <td class="result__text-column date"><p>{{date}}</p></td>
+                    <td class="result__text-column subscriber">{{subscriber}}</td>
+                    <td class="result__text-column video">{{video}}</td>
+                    <td class="result__text-column view">{{view}}</td>
+                  </tr>
+                </script>
+      
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>
+            Web Developers <a href="https://github.com/DenysDevelopment">Maksymuck Denys</a>, <a href="https://github.com/7Taras7">Hlivchuk Taras</a> and <a href="https://github.com/JuliaDom-7920">Silchuk Yuliiya</a> 
+          </p>
+          <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
